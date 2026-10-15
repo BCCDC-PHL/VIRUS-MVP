@@ -157,6 +157,7 @@ def launch_app(_):
     # Some default vals
     get_data_args = {
         "show_clade_defining": False,
+        "show_antigenic_shift": False,
         "hidden_strains": None,
         "strain_order": [],
         "min_mutation_freq": None,
@@ -175,7 +176,7 @@ def launch_app(_):
     return [
         # Bootstrap row containing navbar
         navbar_generator.get_navbar_row(
-            app.get_asset_url("cidgoh_logo.png")
+            app.get_asset_url("bccdc_logo.svg")
         ),
         # Bootstrap collapse containing legend
         legend_generator.get_legend_collapse(),
@@ -209,6 +210,8 @@ def launch_app(_):
         # modularize the callbacks below.
         dcc.Store(id="show-clade-defining",
                   data=get_data_args["show_clade_defining"]),
+        dcc.Store(id="show-antigenic-shift",
+                  data=get_data_args["show_antigenic_shift"]),
         dcc.Store(id="new-upload"),
         dcc.Store(id="hidden-strains", data=get_data_args["hidden_strains"]),
         dcc.Store(id="strain-order", data=get_data_args["strain_order"]),
@@ -244,6 +247,7 @@ def launch_app(_):
     ],
     inputs=[
         Input("show-clade-defining", "data"),
+        Input("show-antigenic-shift", "data"),
         Input("new-upload", "data"),
         Input("hidden-strains", "data"),
         Input("strain-order", "data"),
@@ -254,8 +258,9 @@ def launch_app(_):
     ],
     prevent_initial_call=True
 )
-def update_get_data_args(show_clade_defining, new_upload, hidden_strains,
-                         strain_order, mutation_freq_vals, _, __, ___):
+def update_get_data_args(show_clade_defining, show_antigenic_shift,
+                         new_upload, hidden_strains, strain_order,
+                         mutation_freq_vals, _, __, ___):
     """Update ``get-data-args`` variables in dcc.Store.TODO
 
     This is a central callback. Updating ``get-data-args`` triggers a
@@ -279,6 +284,9 @@ def update_get_data_args(show_clade_defining, new_upload, hidden_strains,
     :param show_clade_defining: ``update_show_clade-defining`` return
         value.
     :type show_clade_defining: bool
+    :param show_antigenic_shift: ``update_show_antigenic_shift`` return
+        value.
+    :type show_antigenic_shift: bool
     :param new_upload: ``update_new_upload`` return value
     :type new_upload: dict
     :param hidden_strains: ``update_hidden_strains`` return value
@@ -315,6 +323,7 @@ def update_get_data_args(show_clade_defining, new_upload, hidden_strains,
 
     args = {
         "show_clade_defining": show_clade_defining,
+        "show_antigenic_shift": show_antigenic_shift,
         "hidden_strains": hidden_strains,
         "strain_order": strain_order,
         "min_mutation_freq": min_mutation_freq,
@@ -369,6 +378,7 @@ def read_data(get_data_args, last_data_mtime):
     ret = get_data(
         [get_reference_data_dir(), get_user_data_dir()],
         show_clade_defining=get_data_args["show_clade_defining"],
+        show_antigenic_shift=get_data_args["show_antigenic_shift"],
         hidden_strains=get_data_args["hidden_strains"],
         strain_order=get_data_args["strain_order"],
         min_mutation_freq=get_data_args["min_mutation_freq"],
@@ -448,6 +458,25 @@ def update_show_clade_defining(switches_value):
         switch is switched on, and ``[]`` if it is not.
     :type switches_value: list
     :return: True if clade defining mutations switch is switched on
+    :rtype: bool
+    """
+    return len(switches_value) > 0
+
+
+@app.callback(
+    Output("show-antigenic-shift", "data"),
+    Input("antigenic-shift-switch", "value"),
+    prevent_initial_call=True
+)
+def update_show_antigenic_shift(switches_value):
+    """Store whether antigenic-shift mutations should be shown.
+
+    The parsed ``antigenic_shift`` GVF attribute is retained for a future
+    filtering implementation; switching this control does not filter yet.
+
+    :param switches_value: ``[1]`` when the switch is on, otherwise ``[]``.
+    :type switches_value: list
+    :return: True when the antigenic shift switch is on.
     :rtype: bool
     """
     return len(switches_value) > 0
