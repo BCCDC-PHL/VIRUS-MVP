@@ -120,10 +120,17 @@ def parse_gvf_sample_variants(path):
             if pos not in ret["mutations"]:
                 ret["mutations"][pos] = []
 
-            mutation_name = attrs["original_mutation_description"]
-            cond = attrs["alias"] not in {"n/a", mutation_name}
-            mutation_alias = attrs["alias"] if cond else ""
+            original_mutation_description = \
+                attrs["original_mutation_description"]
+            alias = attrs["alias"]
+            if alias not in {"", "n/a", original_mutation_description}:
+                mutation_name = alias
+                mutation_alias = original_mutation_description
+            else:
+                mutation_name = original_mutation_description
+                mutation_alias = ""
             alt = attrs["Variant_seq"]
+            
 
             mutation_dict = {}
             for existing_dict in ret["mutations"][pos]:
@@ -143,6 +150,8 @@ def parse_gvf_sample_variants(path):
                     "multi_aa_name": attrs["multi_aa_name"],
                     "clade_defining":
                         attrs["clade_defining"] == "True",
+                    "antigenic_shift":
+                        attrs.get("antigenic_shift", "False") == "True",
                     "hidden_cell": False,
                     "mutation_name": mutation_name,
                     "mutation_alias": mutation_alias,
@@ -223,8 +232,8 @@ def filter_parsed_mutations_by_freq(parsed_mutations, min_mutation_freq,
     return ret
 
 
-def get_data(dirs, show_clade_defining=False, hidden_strains=None,
-             strain_order=None, min_mutation_freq=None,
+def get_data(dirs, show_clade_defining=False, show_antigenic_shift=False,
+             hidden_strains=None, strain_order=None, min_mutation_freq=None,
              max_mutation_freq=None):
     """Get relevant data for Plotly visualizations in this application.
 
@@ -246,6 +255,9 @@ def get_data(dirs, show_clade_defining=False, hidden_strains=None,
     :param show_clade_defining: Set non-clade defining mutations as
         hidden.
     :type show_clade_defining: bool
+    :param show_antigenic_shift: Reserved for filtering mutations marked with
+        the ``antigenic_shift`` GVF attribute. It does not affect results yet.
+    :type show_antigenic_shift: bool
     :param hidden_strains: List of strains from the dirs that the user
         does not want to display in the heatmap and table.
     :type hidden_strains: None | list[str]
