@@ -14,8 +14,12 @@ ENV NXF_VER=24.04.1
 
 RUN groupadd -g $GID appgroup \
     && useradd -u $UID -g $GID -m appuser \
-    && groupadd -g $DOCKER_GID docker \
-    && usermod -aG docker appuser \
+    && if [ -n "$DOCKER_GID" ] && [ "$DOCKER_GID" != "" ]; then \
+         groupadd -g $DOCKER_GID docker || echo "Docker group creation failed, continuing..."; \
+       else \
+         echo "DOCKER_GID not set, skipping docker group creation"; \
+       fi \
+    && usermod -aG docker appuser 2>/dev/null || echo "Could not add user to docker group, continuing..." \
     && mkdir -p ".local/bin" \
     && apt-get update -y \
     && apt-get install openjdk-21-jre-headless -y \
