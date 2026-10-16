@@ -150,8 +150,8 @@ def parse_gvf_sample_variants(path):
                     "multi_aa_name": attrs["multi_aa_name"],
                     "clade_defining":
                         attrs["clade_defining"] == "True",
-                    "antigenic_shift":
-                        attrs.get("antigenic_shift", "False") == "True",
+                    "antigenic_site":
+                        attrs.get("antigenic_site", "False") == "True",
                     "hidden_cell": False,
                     "mutation_name": mutation_name,
                     "mutation_alias": mutation_alias,
@@ -232,7 +232,7 @@ def filter_parsed_mutations_by_freq(parsed_mutations, min_mutation_freq,
     return ret
 
 
-def get_data(dirs, show_clade_defining=False, show_antigenic_shift=False,
+def get_data(dirs, show_clade_defining=False, show_antigenic_site=False,
              hidden_strains=None, strain_order=None, min_mutation_freq=None,
              max_mutation_freq=None):
     """Get relevant data for Plotly visualizations in this application.
@@ -255,9 +255,9 @@ def get_data(dirs, show_clade_defining=False, show_antigenic_shift=False,
     :param show_clade_defining: Set non-clade defining mutations as
         hidden.
     :type show_clade_defining: bool
-    :param show_antigenic_shift: Reserved for filtering mutations marked with
-        the ``antigenic_shift`` GVF attribute. It does not affect results yet.
-    :type show_antigenic_shift: bool
+    :param show_antigenic_site: Reserved for filtering mutations marked with
+        the ``antigenic_site`` GVF attribute. It does not affect results yet.
+    :type show_antigenic_site: bool
     :param hidden_strains: List of strains from the dirs that the user
         does not want to display in the heatmap and table.
     :type hidden_strains: None | list[str]

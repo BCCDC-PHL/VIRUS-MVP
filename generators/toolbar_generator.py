@@ -92,7 +92,7 @@ def get_toolbar_row(data):
                             width="auto"
                         ),
                         dbc.Col(
-                            get_antigenic_shift_switch_form_group(),
+                            get_antigenic_site_switch_form_group(),
                             className="my-auto ml-3 px-0",
                             width="auto"
                         ),
@@ -489,22 +489,22 @@ def get_clade_defining_mutations_switch_form_group():
     return ret
 
 
-def get_antigenic_shift_switch_form_group():
-    """Get form group for the antigenic shift switch.
+def get_antigenic_site_switch_form_group():
+    """Get form group for the antigenic site switch.
 
-    The switch stores its state for future filtering of antigenic-shift data.
+    The switch stores its state for future filtering of antigenic-site data.
 
-    :return: Dash Bootstrap Components form group with antigenic shift switch.
+    :return: Dash Bootstrap Components form group with antigenic site switch.
     :rtype: dbc.FormGroup
     """
     return dbc.FormGroup([
         dbc.Checklist(
             options=[{
-                "label": "Antigenic shift",
+                "label": "Antigenic site",
                 "value": 1
             }],
             value=[],
-            id="antigenic-shift-switch",
+            id="antigenic-site-switch",
             switch=True
         )],
         className="mb-0 pl-xl-2"

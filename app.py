@@ -157,7 +157,7 @@ def launch_app(_):
     # Some default vals
     get_data_args = {
         "show_clade_defining": False,
-        "show_antigenic_shift": False,
+        "show_antigenic_site": False,
         "hidden_strains": None,
         "strain_order": [],
         "min_mutation_freq": None,
@@ -210,8 +210,8 @@ def launch_app(_):
         # modularize the callbacks below.
         dcc.Store(id="show-clade-defining",
                   data=get_data_args["show_clade_defining"]),
-        dcc.Store(id="show-antigenic-shift",
-                  data=get_data_args["show_antigenic_shift"]),
+        dcc.Store(id="show-antigenic-site",
+                  data=get_data_args["show_antigenic_site"]),
         dcc.Store(id="new-upload"),
         dcc.Store(id="hidden-strains", data=get_data_args["hidden_strains"]),
         dcc.Store(id="strain-order", data=get_data_args["strain_order"]),
@@ -247,7 +247,7 @@ def launch_app(_):
     ],
     inputs=[
         Input("show-clade-defining", "data"),
-        Input("show-antigenic-shift", "data"),
+        Input("show-antigenic-site", "data"),
         Input("new-upload", "data"),
         Input("hidden-strains", "data"),
         Input("strain-order", "data"),
@@ -258,7 +258,7 @@ def launch_app(_):
     ],
     prevent_initial_call=True
 )
-def update_get_data_args(show_clade_defining, show_antigenic_shift,
+def update_get_data_args(show_clade_defining, show_antigenic_site,
                          new_upload, hidden_strains, strain_order,
                          mutation_freq_vals, _, __, ___):
     """Update ``get-data-args`` variables in dcc.Store.TODO
@@ -284,9 +284,9 @@ def update_get_data_args(show_clade_defining, show_antigenic_shift,
     :param show_clade_defining: ``update_show_clade-defining`` return
         value.
     :type show_clade_defining: bool
-    :param show_antigenic_shift: ``update_show_antigenic_shift`` return
+    :param show_antigenic_site: ``update_show_antigenic_site`` return
         value.
-    :type show_antigenic_shift: bool
+    :type show_antigenic_site: bool
     :param new_upload: ``update_new_upload`` return value
     :type new_upload: dict
     :param hidden_strains: ``update_hidden_strains`` return value
@@ -323,7 +323,7 @@ def update_get_data_args(show_clade_defining, show_antigenic_shift,
 
     args = {
         "show_clade_defining": show_clade_defining,
-        "show_antigenic_shift": show_antigenic_shift,
+        "show_antigenic_site": show_antigenic_site,
         "hidden_strains": hidden_strains,
         "strain_order": strain_order,
         "min_mutation_freq": min_mutation_freq,
@@ -378,7 +378,7 @@ def read_data(get_data_args, last_data_mtime):
     ret = get_data(
         [get_reference_data_dir(), get_user_data_dir()],
         show_clade_defining=get_data_args["show_clade_defining"],
-        show_antigenic_shift=get_data_args["show_antigenic_shift"],
+        show_antigenic_site=get_data_args["show_antigenic_site"],
         hidden_strains=get_data_args["hidden_strains"],
         strain_order=get_data_args["strain_order"],
         min_mutation_freq=get_data_args["min_mutation_freq"],
@@ -464,19 +464,19 @@ def update_show_clade_defining(switches_value):
 
 
 @app.callback(
-    Output("show-antigenic-shift", "data"),
-    Input("antigenic-shift-switch", "value"),
+    Output("show-antigenic-site", "data"),
+    Input("antigenic-site-switch", "value"),
     prevent_initial_call=True
 )
-def update_show_antigenic_shift(switches_value):
-    """Store whether antigenic-shift mutations should be shown.
+def update_show_antigenic_site(switches_value):
+    """Store whether antigenic-site mutations should be shown.
 
-    The parsed ``antigenic_shift`` GVF attribute is retained for a future
+    The parsed ``antigenic_site`` GVF attribute is retained for a future
     filtering implementation; switching this control does not filter yet.
 
     :param switches_value: ``[1]`` when the switch is on, otherwise ``[]``.
     :type switches_value: list
-    :return: True when the antigenic shift switch is on.
+    :return: True when the antigenic site switch is on.
     :rtype: bool
     """
     return len(switches_value) > 0
