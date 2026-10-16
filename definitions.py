@@ -115,7 +115,7 @@ def get_user_surveillance_reports_dir():
     return get_nested_dir_with_session_vars(USER_SURVEILLANCE_REPORTS_DIR)
 
 
-def populate_nested_asset_dict(virus, reference, segment=None):
+def populate_nested_asset_dict(virus, segment=None, reference=None):
     """TODO"""
     ret_dict = {}
 
@@ -186,11 +186,19 @@ for virus_ in VIRUS_SEGMENT_REFERENCE_DICT:
             NESTED_ASSET_DICT[virus_][segment_] = {}
             for reference_ in VIRUS_SEGMENT_REFERENCE_DICT[virus_][segment_]:
                 NESTED_ASSET_DICT[virus_][segment_][reference_] = \
-                    populate_nested_asset_dict(virus_, segment_, reference_)
+                    populate_nested_asset_dict(
+                        virus=virus_,
+                        segment=segment_,
+                        reference=reference_
+                    )
     else:
         for reference_ in VIRUS_SEGMENT_REFERENCE_DICT[virus_]:
+
             NESTED_ASSET_DICT[virus_][reference_] = \
-                populate_nested_asset_dict(virus_, reference_)
+                populate_nested_asset_dict(
+                    virus=virus_,
+                    reference=reference_
+                )
 
 
 def get_asset_dict(virus=None, segment=None, reference=None):
