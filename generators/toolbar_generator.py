@@ -28,14 +28,14 @@ def get_toolbar_row(data):
                                     get_select_lineages_toolbar_btn(),
                                     # This loading displays during user uploads
                                     dcc.Loading(
-                                        get_file_upload_component(),
-                                        id="upload-loading",
-                                        type="circle"
+                                        #get_file_upload_component(),
+                                        #id="upload-loading",
+                                        #type="circle"
                                     ),
                                     dcc.Loading(
-                                        get_file_download_component(),
-                                        id="download-loading",
-                                        type="circle"
+                                        #get_file_download_component(),
+                                        #id="download-loading",
+                                        #type="circle"
                                     ),
                                     get_jump_to_btn(),
                                     # TODO deactivating for now; back later?
@@ -88,6 +88,11 @@ def get_toolbar_row(data):
                         ),
                         dbc.Col(
                             get_clade_defining_mutations_switch_form_group(),
+                            className="my-auto ml-3 px-0",
+                            width="auto"
+                        ),
+                        dbc.Col(
+                            get_antigenic_shift_switch_form_group(),
                             className="my-auto ml-3 px-0",
                             width="auto"
                         ),
@@ -482,3 +487,25 @@ def get_clade_defining_mutations_switch_form_group():
         className="mb-0 pl-xl-2"
     )
     return ret
+
+
+def get_antigenic_shift_switch_form_group():
+    """Get form group for the antigenic shift switch.
+
+    The switch stores its state for future filtering of antigenic-shift data.
+
+    :return: Dash Bootstrap Components form group with antigenic shift switch.
+    :rtype: dbc.FormGroup
+    """
+    return dbc.FormGroup([
+        dbc.Checklist(
+            options=[{
+                "label": "Antigenic shift",
+                "value": 1
+            }],
+            value=[],
+            id="antigenic-shift-switch",
+            switch=True
+        )],
+        className="mb-0 pl-xl-2"
+    )
