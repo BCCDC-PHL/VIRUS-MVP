@@ -23,7 +23,7 @@
         "end": 265,
         "ID": "id-NC_045512.2:1..265",
         "gbkey": "5'UTR",
-        "color": "rgb(0, 0, 0)"
+        "color": "rgba(0, 0, 0, 1)"
     },
     "gene-GU280_gp01": {
         "type": "gene",
@@ -35,23 +35,7 @@
         "gbkey": "Gene",
         "gene": "ORF1ab",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp01",
-        "gene_name": {
-            "label": "open reading frame 1ab gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101134"
-        },
-        "gene_symbol": {
-            "label": "orf1ab gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101135"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp01"
     },
     "ORF1a": {
         "type": "CDS",
@@ -70,18 +54,10 @@
         "protein_id": "YP_009724389.1",
         "aa_start": 1,
         "aa_end": 4400,
-        "color": "rgb(217, 173, 61)",
         "protein_alias": [
             "ORF1a"
         ],
-        "protein_name": {
-            "label": "open reading frame 1a polyprotein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101140"
-        },
-        "protein_symbol": {
-            "label": "Orf1a protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101141"
-        }
+        "color": "rgba(96, 170, 158, 1)"
     },
     "ORF1b": {
         "type": "CDS",
@@ -100,19 +76,11 @@
         "protein_id": "YP_009724389.1",
         "aa_start": 1,
         "aa_end": 2695,
-        "color": "rgb(80, 151, 186)",
         "protein_alias": [
             "ORF1b",
             "ORF1ab"
         ],
-        "protein_name": {
-            "label": "open reading frame 1a polyprotein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101140"
-        },
-        "protein_symbol": {
-            "label": "Orf1a protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101141"
-        }
+        "color": "rgba(217, 173, 61, 1)"
     },
     "nsp1": {
         "type": "mature_protein_region_of_CDS",
@@ -126,10 +94,10 @@
         "protein_id": "YP_009725297.1",
         "aa_start": 1,
         "aa_end": 180,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp1"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp2": {
         "type": "mature_protein_region_of_CDS",
@@ -143,10 +111,10 @@
         "protein_id": "YP_009725298.1",
         "aa_start": 181,
         "aa_end": 818,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp2"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "PL_pro": {
         "type": "mature_protein_region_of_CDS",
@@ -160,11 +128,11 @@
         "protein_id": "YP_009725299.1",
         "aa_start": 819,
         "aa_end": 2763,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "PL_pro",
             "PLpro"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp4": {
         "type": "mature_protein_region_of_CDS",
@@ -178,10 +146,10 @@
         "protein_id": "YP_009725300.1",
         "aa_start": 2764,
         "aa_end": 3263,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp4"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "3CL": {
         "type": "mature_protein_region_of_CDS",
@@ -195,10 +163,10 @@
         "protein_id": "YP_009725301.1",
         "aa_start": 3264,
         "aa_end": 3569,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "3CL"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp6": {
         "type": "mature_protein_region_of_CDS",
@@ -212,10 +180,10 @@
         "protein_id": "YP_009725302.1",
         "aa_start": 3570,
         "aa_end": 3859,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp6"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp7": {
         "type": "mature_protein_region_of_CDS",
@@ -229,10 +197,10 @@
         "protein_id": "YP_009725303.1",
         "aa_start": 3860,
         "aa_end": 3942,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp7"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp8": {
         "type": "mature_protein_region_of_CDS",
@@ -246,10 +214,10 @@
         "protein_id": "YP_009725304.1",
         "aa_start": 3943,
         "aa_end": 4140,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp8"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp9": {
         "type": "mature_protein_region_of_CDS",
@@ -263,10 +231,10 @@
         "protein_id": "YP_009725305.1",
         "aa_start": 4141,
         "aa_end": 4253,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp9"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp10": {
         "type": "mature_protein_region_of_CDS",
@@ -280,10 +248,10 @@
         "protein_id": "YP_009725306.1",
         "aa_start": 4254,
         "aa_end": 4392,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp10"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "RdRp": {
         "type": "mature_protein_region_of_CDS",
@@ -297,11 +265,25 @@
         "protein_id": "YP_009725307.1",
         "aa_start": 4393,
         "aa_end": 5324,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "RdRp",
             "nsp12"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
+    },
+    "RNA-dependent RNA polymerase-i": {
+        "type": "mature_protein_region_of_CDS",
+        "start": 13468,
+        "end": 16236,
+        "ID": "id-YP_009724389.1:4393..5324",
+        "Note": "nsp12%3B NiRAN and RdRp%3B produced by pp1ab only",
+        "Parent": "cds-YP_009724389.1",
+        "gbkey": "Prot",
+        "product": "RNA-dependent RNA polymerase-i",
+        "protein_id": "YP_009725307.1",
+        "aa_start": 4393,
+        "aa_end": 5324,
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp13": {
         "type": "mature_protein_region_of_CDS",
@@ -315,10 +297,10 @@
         "protein_id": "YP_009725308.1",
         "aa_start": 5325,
         "aa_end": 5925,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp13"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp14": {
         "type": "mature_protein_region_of_CDS",
@@ -332,10 +314,10 @@
         "protein_id": "YP_009725309.1",
         "aa_start": 5926,
         "aa_end": 6452,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp14"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp15": {
         "type": "mature_protein_region_of_CDS",
@@ -349,10 +331,10 @@
         "protein_id": "YP_009725310.1",
         "aa_start": 6453,
         "aa_end": 6798,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp15"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp16": {
         "type": "mature_protein_region_of_CDS",
@@ -366,10 +348,62 @@
         "protein_id": "YP_009725311.1",
         "aa_start": 6799,
         "aa_end": 7096,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp16"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
+    },
+    "leader protein": {
+        "type": "mature_protein_region_of_CDS",
+        "start": 266,
+        "end": 805,
+        "ID": "id-YP_009725295.1:1..180",
+        "Note": "nsp1%3B produced by both pp1a and pp1ab",
+        "Parent": "cds-YP_009725295.1",
+        "gbkey": "Prot",
+        "product": "leader protein",
+        "protein_id": "YP_009742608.1",
+        "aa_start": 1,
+        "aa_end": 180,
+        "protein_alias": [
+            "nsp1"
+        ],
+        "color": "rgba(128, 0, 128, 1)"
+    },
+    "nsp3": {
+        "type": "mature_protein_region_of_CDS",
+        "start": 2720,
+        "end": 8554,
+        "ID": "id-YP_009725295.1:819..2763",
+        "Note": "former nsp1%3B conserved domains are: N-terminal acidic (Ac)%2C predicted phosphoesterase%2C papain-like proteinase%2C Y-domain%2C transmembrane domain 1 (TM1)%2C adenosine diphosphate-ribose 1''-phosphatase (ADRP)%3B produced by both pp1a and pp1ab",
+        "Parent": "cds-YP_009725295.1",
+        "gbkey": "Prot",
+        "product": "nsp3",
+        "protein_id": "YP_009742610.1",
+        "aa_start": 819,
+        "aa_end": 2763,
+        "protein_alias": [
+            "PL_pro",
+            "PLpro"
+        ],
+        "color": "rgba(128, 0, 128, 1)"
+    },
+    "3C-like proteinase": {
+        "type": "mature_protein_region_of_CDS",
+        "start": 10055,
+        "end": 10972,
+        "ID": "id-YP_009725295.1:3264..3569",
+        "Note": "nsp5A_3CLpro and nsp5B_3CLpro%3B main proteinase (Mpro)%3B mediates cleavages downstream of nsp4. 3D structure of the SARSr-CoV homolog has been determined (Yang et al.%2C 2003)%3B produced by both pp1a and pp1ab",
+        "Parent": "cds-YP_009725295.1",
+        "gbkey": "Prot",
+        "product": "3C-like proteinase",
+        "protein_id": "YP_009742612.1",
+        "aa_start": 3264,
+        "aa_end": 3569,
+        "protein_alias": [
+            "3CL"
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "nsp11": {
         "type": "mature_protein_region_of_CDS",
@@ -383,21 +417,23 @@
         "protein_id": "YP_009725312.1",
         "aa_start": 4393,
         "aa_end": 4405,
-        "color": "rgb(128,0,128)",
         "protein_alias": [
             "nsp11"
-        ]
+        ],
+        "color": "rgba(128, 0, 128, 1)"
     },
     "stem_loop": {
         "type": "stem_loop",
-        "start": 29728,
-        "end": 29768,
-        "ID": "id-NC_045512.2:29728..29768",
-        "Note": "basepair exception: alignment to the Rfam model implies coordinates 29740:29758 form a noncanonical C:T basepair%2C but the homologous positions form a highly conserved C:G basepair in other viruses%2C including SARS (NC_004718.3)",
-        "function": "Coronavirus 3' stem-loop II-like motif (s2m)",
+        "start": 13476,
+        "end": 13503,
+        "ID": "id-GU280_gp01",
+        "Dbxref": "GeneID:43740578",
+        "function": "Coronavirus frameshifting stimulation element stem-loop 1",
         "gbkey": "stem_loop",
-        "inference": "COORDINATES: profile:Rfam-release-14.1:RF00164%2CInfernal:1.1.2",
-        "color": "rgb(0, 0, 0)"
+        "gene": "ORF1ab",
+        "inference": "COORDINATES: profile:Rfam-release-14.1:RF00507%2CInfernal:1.1.2",
+        "locus_tag": "GU280_gp01",
+        "color": "rgba(0, 0, 0, 1)"
     },
     "gene-GU280_gp02": {
         "type": "gene",
@@ -410,23 +446,7 @@
         "gene": "S",
         "gene_biotype": "protein_coding",
         "gene_synonym": "spike glycoprotein",
-        "locus_tag": "GU280_gp02",
-        "gene_name": {
-            "label": "surface glycoprotein gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101142"
-        },
-        "gene_symbol": {
-            "label": "s gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101143"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp02"
     },
     "S": {
         "type": "CDS",
@@ -444,16 +464,10 @@
         "protein_id": "YP_009724390.1",
         "aa_start": 1,
         "aa_end": 1273,
-        "color": "rgb(142, 188, 102)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "surface glycoprotein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101144"
-        },
-        "protein_symbol": {
-            "label": "S protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101145"
-        }
+        "protein_alias": [
+            "S"
+        ],
+        "color": "rgba(80, 151, 187, 1)"
     },
     "gene-GU280_gp03": {
         "type": "gene",
@@ -465,23 +479,7 @@
         "gbkey": "Gene",
         "gene": "ORF3a",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp03",
-        "gene_name": {
-            "label": "open reading frame 3a gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101146"
-        },
-        "gene_symbol": {
-            "label": "orf3a gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101147"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp03"
     },
     "ORF3a": {
         "type": "CDS",
@@ -498,16 +496,10 @@
         "protein_id": "YP_009724391.1",
         "aa_start": 1,
         "aa_end": 275,
-        "color": "rgb(229, 150, 55)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "open reading frame 3a protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101148"
-        },
-        "protein_symbol": {
-            "label": "Orf3a protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101149"
-        }
+        "protein_alias": [
+            "ORF3a"
+        ],
+        "color": "rgba(230, 112, 48, 1)"
     },
     "gene-GU280_gp04": {
         "type": "gene",
@@ -519,23 +511,7 @@
         "gbkey": "Gene",
         "gene": "E",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp04",
-        "gene_name": {
-            "label": "envelope gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101150"
-        },
-        "gene_symbol": {
-            "label": "e gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101151"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp04"
     },
     "E": {
         "type": "CDS",
@@ -553,16 +529,10 @@
         "protein_id": "YP_009724392.1",
         "aa_start": 1,
         "aa_end": 75,
-        "color": "rgb(170, 189, 82)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "envelope protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101152"
-        },
-        "protein_symbol": {
-            "label": "E protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101153"
-        }
+        "protein_alias": [
+            "E"
+        ],
+        "color": "rgba(142, 188, 102, 1)"
     },
     "gene-GU280_gp05": {
         "type": "gene",
@@ -574,23 +544,7 @@
         "gbkey": "Gene",
         "gene": "M",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp05",
-        "gene_name": {
-            "label": "membrane glycoprotein gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101154"
-        },
-        "gene_symbol": {
-            "label": "m gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101155"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp05"
     },
     "M": {
         "type": "CDS",
@@ -608,16 +562,10 @@
         "protein_id": "YP_009724393.1",
         "aa_start": 1,
         "aa_end": 222,
-        "color": "rgb(223, 67, 39)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "membrane glycoprotein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101156"
-        },
-        "protein_symbol": {
-            "label": "M protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101157"
-        }
+        "protein_alias": [
+            "M"
+        ],
+        "color": "rgba(229, 150, 55, 1)"
     },
     "gene-GU280_gp06": {
         "type": "gene",
@@ -629,23 +577,7 @@
         "gbkey": "Gene",
         "gene": "ORF6",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp06",
-        "gene_name": {
-            "label": "open reading frame 6 gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101158"
-        },
-        "gene_symbol": {
-            "label": "orf6 gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101159"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp06"
     },
     "ORF6": {
         "type": "CDS",
@@ -662,16 +594,10 @@
         "protein_id": "YP_009724394.1",
         "aa_start": 1,
         "aa_end": 61,
-        "color": "rgb(196, 185, 69)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "open reading frame 6 protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101160"
-        },
-        "protein_symbol": {
-            "label": "Orf6 protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101161"
-        }
+        "protein_alias": [
+            "ORF6"
+        ],
+        "color": "rgba(170, 189, 82, 1)"
     },
     "gene-GU280_gp07": {
         "type": "gene",
@@ -683,23 +609,7 @@
         "gbkey": "Gene",
         "gene": "ORF7a",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp07",
-        "gene_name": {
-            "label": "open reading frame 7a gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101162"
-        },
-        "gene_symbol": {
-            "label": "orf7a gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101163"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp07"
     },
     "ORF7a": {
         "type": "CDS",
@@ -716,16 +626,10 @@
         "protein_id": "YP_009724395.1",
         "aa_start": 1,
         "aa_end": 121,
-        "color": "rgb(117, 182, 129)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "open reading frame 7a protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101164"
-        },
-        "protein_symbol": {
-            "label": "Orf7a protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101165"
-        }
+        "protein_alias": [
+            "ORF7a"
+        ],
+        "color": "rgba(223, 66, 39, 1)"
     },
     "gene-GU280_gp08": {
         "type": "gene",
@@ -737,23 +641,7 @@
         "gbkey": "Gene",
         "gene": "ORF7b",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp08",
-        "gene_name": {
-            "label": "open reading frame 7b gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101166"
-        },
-        "gene_symbol": {
-            "label": "orf7b gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101167"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp08"
     },
     "ORF7b": {
         "type": "CDS",
@@ -770,16 +658,10 @@
         "protein_id": "YP_009725318.1",
         "aa_start": 1,
         "aa_end": 43,
-        "color": "rgb(96, 170, 158)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "open reading frame 7b protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101168"
-        },
-        "protein_symbol": {
-            "label": "Orf7b protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101169"
-        }
+        "protein_alias": [
+            "ORF7b"
+        ],
+        "color": "rgba(213, 206, 127, 1)"
     },
     "gene-GU280_gp09": {
         "type": "gene",
@@ -791,23 +673,7 @@
         "gbkey": "Gene",
         "gene": "ORF8",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp09",
-        "gene_name": {
-            "label": "open reading frame 8 gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101170"
-        },
-        "gene_symbol": {
-            "label": "orf8 gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101171"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp09"
     },
     "ORF8": {
         "type": "CDS",
@@ -824,16 +690,10 @@
         "protein_id": "YP_009724396.1",
         "aa_start": 1,
         "aa_end": 121,
-        "color": "rgb(217, 173, 61)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "open reading frame 8 protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101172"
-        },
-        "protein_symbol": {
-            "label": "Orf8 protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101173"
-        }
+        "protein_alias": [
+            "ORF8"
+        ],
+        "color": "rgba(117, 182, 129, 1)"
     },
     "gene-GU280_gp10": {
         "type": "gene",
@@ -845,23 +705,7 @@
         "gbkey": "Gene",
         "gene": "N",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp10",
-        "gene_name": {
-            "label": "nucleocapsid phosphoprotein gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101174"
-        },
-        "gene_symbol": {
-            "label": "n gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101175"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp10"
     },
     "N": {
         "type": "CDS",
@@ -879,16 +723,10 @@
         "protein_id": "YP_009724397.2",
         "aa_start": 1,
         "aa_end": 419,
-        "color": "rgb(80, 151, 186)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "nucleocapsid phosphoprotein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101176"
-        },
-        "protein_symbol": {
-            "label": "N protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101177"
-        }
+        "protein_alias": [
+            "N"
+        ],
+        "color": "rgba(96, 170, 158, 1)"
     },
     "gene-GU280_gp11": {
         "type": "gene",
@@ -900,23 +738,7 @@
         "gbkey": "Gene",
         "gene": "ORF10",
         "gene_biotype": "protein_coding",
-        "locus_tag": "GU280_gp11",
-        "gene_name": {
-            "label": "open reading frame 10 gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101178"
-        },
-        "gene_symbol": {
-            "label": "orf10 gene (SARS-CoV-2)",
-            "uri": "GENEPIO:0101179"
-        },
-        "strand_orientation": {
-            "label": "sense strand orientation",
-            "uri": "GENEPIO:0700002"
-        },
-        "gene_orientation": {
-            "label": "forward gene orientation",
-            "uri": "GENEPIO:0700004"
-        }
+        "locus_tag": "GU280_gp11"
     },
     "ORF10": {
         "type": "CDS",
@@ -933,16 +755,10 @@
         "protein_id": "YP_009725255.1",
         "aa_start": 1,
         "aa_end": 38,
-        "color": "rgb(230, 112, 48)",
-        "protein_alias": [],
-        "protein_name": {
-            "label": "open reading frame 10 protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101180"
-        },
-        "protein_symbol": {
-            "label": "Orf10 protein (SARS-CoV-2)",
-            "uri": "GENEPIO:0101181"
-        }
+        "protein_alias": [
+            "ORF10"
+        ],
+        "color": "rgba(128, 128, 128, 1)"
     },
     "3'UTR": {
         "type": "three_prime_UTR",
@@ -950,7 +766,7 @@
         "end": 29903,
         "ID": "id-NC_045512.2:29675..29903",
         "gbkey": "3'UTR",
-        "color": "rgb(0, 0, 0)"
+        "color": "rgba(0, 0, 0, 1)"
     },
     "INTERGENIC": {
         "type": "INTERGENIC",

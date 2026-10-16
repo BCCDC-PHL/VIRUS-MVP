@@ -1,0 +1,54 @@
+{
+    "Src": {
+        "type": "region",
+        "start": 1,
+        "end": 2316,
+        "ID": "MW626061.1:1..2316",
+        "Dbxref": "taxon:11320",
+        "Name": "1",
+        "collection-date": "19-Dec-2019",
+        "country": "USA: Wisconsin",
+        "gbkey": "Src",
+        "mol_type": "viral cRNA",
+        "nat-host": "Homo sapiens",
+        "note": "passage details:C2S1 (2020-05-15)",
+        "segment": "1",
+        "serotype": "H1N1",
+        "strain": "A/Wisconsin/588/2019",
+        "species": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11320",
+        "accession": "MW626061.1"
+    },
+    "gene-PB2": {
+        "type": "gene",
+        "start": 16,
+        "end": 2295,
+        "ID": "gene-PB2",
+        "Name": "PB2",
+        "gbkey": "Gene",
+        "gene": "PB2",
+        "gene_biotype": "protein_coding"
+    },
+    "PB2": {
+        "type": "CDS",
+        "start": 16,
+        "end": 2295,
+        "ID": "cds-QRV63265.1",
+        "Parent": "gene-PB2",
+        "Dbxref": "NCBI_GP:QRV63265.1",
+        "Name": "QRV63265.1",
+        "gbkey": "CDS",
+        "gene": "PB2",
+        "product": "polymerase PB2",
+        "protein_id": "QRV63265.1",
+        "aa_start": 1,
+        "aa_end": 759,
+        "protein_alias": [
+            "PB2"
+        ],
+        "color": "rgba(96, 170, 158, 1)"
+    },
+    "INTERGENIC": {
+        "type": "INTERGENIC",
+        "color": "rgb(128,128,128)"
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "Src": {
+        "type": "region",
+        "start": 1,
+        "end": 1002,
+        "ID": "MW626058.1:1..1002",
+        "Dbxref": "taxon:11320",
+        "Name": "7",
+        "collection-date": "19-Dec-2019",
+        "country": "USA: Wisconsin",
+        "gbkey": "Src",
+        "mol_type": "viral cRNA",
+        "nat-host": "Homo sapiens",
+        "note": "passage details:C2S1 (2020-05-15)",
+        "segment": "7",
+        "serotype": "H1N1",
+        "strain": "A/Wisconsin/588/2019",
+        "species": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11320",
+        "accession": "MW626058.1"
+    },
+    "gene-M2": {
+        "type": "gene",
+        "start": 14,
+        "end": 995,
+        "ID": "gene-M2",
+        "Name": "M2",
+        "gbkey": "Gene",
+        "gene": "M2",
+        "gene_biotype": "protein_coding"
+    },
+    "M2": {
+        "type": "CDS",
+        "start": 14,
+        "end": 39,
+        "ID": "cds-QRV63261.1",
+        "Parent": "gene-M2",
+        "Dbxref": "NCBI_GP:QRV63261.1",
+        "Name": "QRV63261.1",
+        "gbkey": "CDS",
+        "gene": "M2",
+        "product": "matrix protein 2",
+        "protein_id": "QRV63261.1",
+        "aa_start": 1,
+        "aa_end": 8,
+        "protein_alias": [
+            "M2"
+        ],
+        "color": "rgba(217, 173, 60, 1)"
+    },
+    "M2_1": {
+        "type": "CDS",
+        "start": 728,
+        "end": 995,
+        "ID": "cds-QRV63261.1",
+        "Parent": "gene-M2",
+        "Dbxref": "NCBI_GP:QRV63261.1",
+        "Name": "QRV63261.1",
+        "gbkey": "CDS",
+        "gene": "M2",
+        "product": "matrix protein 2-i",
+        "protein_id": "QRV63261.1",
+        "aa_start": 1,
+        "aa_end": 89,
+        "protein_alias": [
+            "M2"
+        ],
+        "color": "rgba(217, 173, 60, 1)"
+    },
+    "gene-M1": {
+        "type": "gene",
+        "start": 14,
+        "end": 772,
+        "ID": "gene-M1",
+        "Name": "M1",
+        "gbkey": "Gene",
+        "gene": "M1",
+        "gene_biotype": "protein_coding"
+    },
+    "M1": {
+        "type": "CDS",
+        "start": 14,
+        "end": 772,
+        "ID": "cds-QRV63260.1",
+        "Parent": "gene-M1",
+        "Dbxref": "NCBI_GP:QRV63260.1",
+        "Name": "QRV63260.1",
+        "gbkey": "CDS",
+        "gene": "M1",
+        "product": "matrix protein 1",
+        "protein_id": "QRV63260.1",
+        "aa_start": 1,
+        "aa_end": 252,
+        "protein_alias": [
+            "M1"
+        ],
+        "color": "rgba(217, 173, 60, 1)"
+    },
+    "INTERGENIC": {
+        "type": "INTERGENIC",
+        "color": "rgb(128,128,128)"
+    }
+}

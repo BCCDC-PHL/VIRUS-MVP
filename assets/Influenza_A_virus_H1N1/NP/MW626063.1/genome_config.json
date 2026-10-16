@@ -1,0 +1,54 @@
+{
+    "Src": {
+        "type": "region",
+        "start": 1,
+        "end": 1540,
+        "ID": "MW626063.1:1..1540",
+        "Dbxref": "taxon:11320",
+        "Name": "5",
+        "collection-date": "19-Dec-2019",
+        "country": "USA: Wisconsin",
+        "gbkey": "Src",
+        "mol_type": "viral cRNA",
+        "nat-host": "Homo sapiens",
+        "note": "passage details:C2S1 (2020-05-15)",
+        "segment": "5",
+        "serotype": "H1N1",
+        "strain": "A/Wisconsin/588/2019",
+        "species": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11320",
+        "accession": "MW626063.1"
+    },
+    "gene-NP": {
+        "type": "gene",
+        "start": 34,
+        "end": 1530,
+        "ID": "gene-NP",
+        "Name": "NP",
+        "gbkey": "Gene",
+        "gene": "NP",
+        "gene_biotype": "protein_coding"
+    },
+    "NP": {
+        "type": "CDS",
+        "start": 34,
+        "end": 1530,
+        "ID": "cds-QRV63267.1",
+        "Parent": "gene-NP",
+        "Dbxref": "NCBI_GP:QRV63267.1",
+        "Name": "QRV63267.1",
+        "gbkey": "CDS",
+        "gene": "NP",
+        "product": "nucleocapsid protein",
+        "protein_id": "QRV63267.1",
+        "aa_start": 1,
+        "aa_end": 498,
+        "protein_alias": [
+            "NP"
+        ],
+        "color": "rgba(96, 170, 158, 1)"
+    },
+    "INTERGENIC": {
+        "type": "INTERGENIC",
+        "color": "rgb(128,128,128)"
+    }
+}

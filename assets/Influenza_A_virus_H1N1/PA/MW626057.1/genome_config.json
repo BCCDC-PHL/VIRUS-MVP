@@ -1,0 +1,104 @@
+{
+    "Src": {
+        "type": "region",
+        "start": 1,
+        "end": 2208,
+        "ID": "MW626057.1:1..2208",
+        "Dbxref": "taxon:11320",
+        "Name": "3",
+        "collection-date": "19-Dec-2019",
+        "country": "USA: Wisconsin",
+        "gbkey": "Src",
+        "mol_type": "viral cRNA",
+        "nat-host": "Homo sapiens",
+        "note": "passage details:C2S1 (2020-05-15)",
+        "segment": "3",
+        "serotype": "H1N1",
+        "strain": "A/Wisconsin/588/2019",
+        "species": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11320",
+        "accession": "MW626057.1"
+    },
+    "gene-PA": {
+        "type": "gene",
+        "start": 13,
+        "end": 2163,
+        "ID": "gene-PA",
+        "Name": "PA",
+        "gbkey": "Gene",
+        "gene": "PA",
+        "gene_biotype": "protein_coding"
+    },
+    "PA": {
+        "type": "CDS",
+        "start": 13,
+        "end": 2163,
+        "ID": "cds-QRV63258.1",
+        "Parent": "gene-PA",
+        "Dbxref": "NCBI_GP:QRV63258.1",
+        "Name": "QRV63258.1",
+        "gbkey": "CDS",
+        "gene": "PA",
+        "product": "polymerase PA",
+        "protein_id": "QRV63258.1",
+        "aa_start": 1,
+        "aa_end": 716,
+        "protein_alias": [
+            "PA"
+        ],
+        "color": "rgba(96, 170, 158, 1)"
+    },
+    "gene-PA-X": {
+        "type": "gene",
+        "start": 13,
+        "end": 712,
+        "ID": "gene-PA-X",
+        "Name": "PA-X",
+        "gbkey": "Gene",
+        "gene": "PA-X",
+        "gene_biotype": "protein_coding"
+    },
+    "PA-X": {
+        "type": "CDS",
+        "start": 13,
+        "end": 582,
+        "ID": "cds-QRV63259.1",
+        "Parent": "gene-PA-X",
+        "Dbxref": "NCBI_GP:QRV63259.1",
+        "Name": "QRV63259.1",
+        "exception": "ribosomal slippage",
+        "gbkey": "CDS",
+        "gene": "PA-X",
+        "product": "PA-X protein",
+        "protein_id": "QRV63259.1",
+        "aa_start": 1,
+        "aa_end": 189,
+        "protein_alias": [
+            "PA-X"
+        ],
+        "color": "rgba(96, 170, 158, 1)"
+    },
+    "PA-X_1": {
+        "type": "CDS",
+        "start": 584,
+        "end": 712,
+        "ID": "cds-QRV63259.1",
+        "Parent": "gene-PA-X",
+        "Dbxref": "NCBI_GP:QRV63259.1",
+        "Name": "QRV63259.1",
+        "exception": "ribosomal slippage",
+        "gbkey": "CDS",
+        "gene": "PA-X",
+        "product": "PA-X protein-i",
+        "protein_id": "QRV63259.1",
+        "aa_start": 1,
+        "aa_end": 42,
+        "protein_alias": [
+            "PA-X"
+        ],
+        "color": "rgba(96, 170, 158, 1)"
+    },
+    "INTERGENIC": {
+        "type": "INTERGENIC",
+        "color": "rgb(128,128,128)"
+    }
+}
