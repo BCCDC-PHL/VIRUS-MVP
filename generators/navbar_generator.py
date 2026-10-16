@@ -6,7 +6,7 @@ from flask import session
 
 from definitions import VIRUS_SEGMENT_REFERENCE_DICT, is_segmented
 
-def get_navbar_row(cidgoh_logo_path):
+def get_navbar_row(bccdc_logo_path):
     """Get Dash Bootstrap Components row containing navbar.
 
     :return: Dash Bootstrap Components row containing navbar.
@@ -18,36 +18,36 @@ def get_navbar_row(cidgoh_logo_path):
         virus_dropdown,
         segment_dropdown,
         reference_dropdown,
-        dbc.NavItem(
-            dbc.NavLink("TUTORIAL",
-                        id="toggle-readme-link",
-                        href="#")
-        ),
+        #dbc.NavItem(
+        #    dbc.NavLink("TUTORIAL",
+        #                id="toggle-readme-link",
+        #                href="#")
+        #),
         dbc.NavItem(
             dbc.NavLink("GITHUB",
-                        href="https://github.com/cidgoh/VIRUS-MVP",
+                        href="https://github.com/BCCDC-PHL/VIRUS-MVP",
                         target="_blank")
         ),
-        dbc.NavItem(
-            dbc.NavLink("GENOMICS WORKFLOW",
-                        href="https://github.com/cidgoh/nf-ncov-voc",
-                        target="_blank")
-        ),
-        dbc.NavItem(
-            dbc.NavLink("CONTACT US",
-                        href="https://cidgoh.ca/contact/",
-                        target="_blank")
-        ),
+        #dbc.NavItem(
+        #    dbc.NavLink("GENOMICS WORKFLOW",
+        #                href="https://github.com/cidgoh/nf-ncov-voc",
+        #                target="_blank")
+        #),
+        #dbc.NavItem(
+        #    dbc.NavLink("CONTACT US",
+        #                href="https://cidgoh.ca/contact/",
+        #                target="_blank")
+        #),
         dbc.NavItem(
             dbc.NavLink(
-                html.Img(src=cidgoh_logo_path,
+                html.Img(src=bccdc_logo_path,
                          style={"height": "4vh"}),
-                href="https://cidgoh.ca/",
+                href="https://bccdc.ca/",
                 target="_blank"
             )
         )
     ], className="align-items-center justify-content-end")
-    return dbc.Row(dbc.Col(ret, className="bg-light border-bottom"))
+    return dbc.Row(dbc.Col(ret, style={"backgroundColor": "white"}))
 
 
 def get_virus_reference_segment_navs():
